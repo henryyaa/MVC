@@ -1,6 +1,10 @@
-const { Sequelize } = require("sequelize")
+//arquivo de conexão com o banco
+const { Sequelize } = require("sequelize") //importa o sequelize
 
-const sequelize = new Sequelize('biblioteca', 'root', '',
+const sequelize = new Sequelize( //faz a conexão com o banco
+    'biblioteca',//nome do banco
+     'root', //senha
+     '', //senha vazia
     { host: 'localhost', dialect: 'mysql', logging: false })
 
     model.exports = sequelize
